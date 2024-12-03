@@ -1,11 +1,11 @@
-#include "memory_functions_NNNN.h"
+#include "memory_functions_chitwoo.h"
 
 using namespace std;
 
 // initMemory initializes the memory; at the outset of the game the grid of
 // shots taken is empty, we've not hit any ships, and our player can only apply
 // a general, somewhat random firing strategy until we get a hit on some ship
-void initMemoryNNNN(ComputerMemory &memory) {
+void initMemoryChitwoo(ComputerMemory &memory) {
    memory.mode        =  RANDOM;
    memory.hitRow      = -1;
    memory.hitCol      = -1;
@@ -23,7 +23,7 @@ void initMemoryNNNN(ComputerMemory &memory) {
 
 // complete this function so it produces a "smart" move based on the information
 // which appears in the computer's memory
-string smartMoveNNNN(const ComputerMemory &memory) {
+string smartMoveChitwoo(const ComputerMemory &memory) {
    string move;
 
    return move;
@@ -31,7 +31,7 @@ string smartMoveNNNN(const ComputerMemory &memory) {
 
 // complete this function so it updates the computer's memory based on the
 // result of the last shot at location (row, col)
-void updateMemoryNNNN(int row, int col, int result, ComputerMemory &memory) {
+void updateMemoryChitwoo(int row, int col, int result, ComputerMemory &memory) {
 
 }
 

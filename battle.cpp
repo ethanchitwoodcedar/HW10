@@ -4,7 +4,7 @@
 
 #include "battleship.h"
 #include "memory.h"                     
-#include "memory_functions_NNNN.h"
+#include "memory_functions_chitwoo.h"
 
 int main() {
    Board          dumbComputerBoard, smartComputerBoard;
@@ -25,7 +25,7 @@ int main() {
    // Initialize the game boards
    initializeBoard(dumbComputerBoard);
    initializeBoard(smartComputerBoard);
-   initMemoryNNNN (smartComputerMemory);
+   initMemoryChitwoo (smartComputerMemory);
 
    // Play the game until one player has sunk the other's ships
    while (!done) {
@@ -57,7 +57,7 @@ int main() {
       }
 
       // get the smartComputer's move
-      smartComputerMove = smartMoveNNNN(smartComputerMemory);       
+      smartComputerMove = smartMoveChitwoo(smartComputerMemory);       
 
       while (checkMove(smartComputerMove, dumbComputerBoard, 
                        smartComputerRow,  smartComputerColumn) != VALID_MOVE) {
@@ -71,7 +71,7 @@ int main() {
                                      smartComputerBoard);
       smartComputerResult = playMove(smartComputerRow, smartComputerColumn,
                                      dumbComputerBoard);
-      updateMemoryNNNN(smartComputerRow,    smartComputerColumn,  
+      updateMemoryChitwoo(smartComputerRow,    smartComputerColumn,  
                        smartComputerResult, smartComputerMemory); 
 
       // blank the screen to show the new game situation
